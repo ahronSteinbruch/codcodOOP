@@ -1,0 +1,8 @@
+C:\Users\user\Desktop\Kodcod\emergencyOperation\bin\Debug\emergencyOperation.exe.config
+C:\Users\user\Desktop\Kodcod\emergencyOperation\bin\Debug\emergencyOperation.exe
+C:\Users\user\Desktop\Kodcod\emergencyOperation\bin\Debug\emergencyOperation.pdb
+C:\Users\user\Desktop\Kodcod\emergencyOperation\obj\Debug\emergencyOperation.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Kodcod\emergencyOperation\obj\Debug\emergencyOperation.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\Kodcod\emergencyOperation\obj\Debug\emergencyOperation.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Kodcod\emergencyOperation\obj\Debug\emergencyOperation.exe
+C:\Users\user\Desktop\Kodcod\emergencyOperation\obj\Debug\emergencyOperation.pdb
