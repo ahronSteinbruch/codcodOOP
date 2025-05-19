@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using static System.Net.WebRequestMethods;
 
 namespace EmergencyOperation
 {
@@ -122,7 +123,7 @@ namespace EmergencyOperation
 
         public void Dispatch(EmergencyReport report)
         {
-            foreach (var team in teams)
+            foreach (Team team in teams)
             {
                 if (team.IsMatch(report))
                 {
@@ -139,26 +140,27 @@ namespace EmergencyOperation
     {
         static void Main(string[] args)
         {
-            var teams = new List<Team>
+            List<Team> teams = new List<Team>
             {
                 new Flood("Flood Team A", "North"),
                 new Injury("Medic One", "North"),
                 new Blockage("RoadClear Squad", "North")
             };
 
-            var center = new DispatchCenter(teams);
+            DispatchCenter center = new DispatchCenter(teams);
 
-            var report1 = new EmergencyReport(EmergencyType.Flood, "North", 2, 5, "Flood near river");
+            EmergencyReport report1 = new EmergencyReport(EmergencyType.Flood, "North", 2, 5, "Flood near river");
             center.Dispatch(report1);
 
-            var report2 = new EmergencyReport(EmergencyType.Injury, "North", 4, 1, "Car accident injury");
+            EmergencyReport report2 = new EmergencyReport(EmergencyType.Injury, "North", 4, 1, "Car accident injury");
             center.Dispatch(report2);
 
-            var report3 = new EmergencyReport(EmergencyType.Blockage, "North", 1, 3, "Tree blocking road");
+            EmergencyReport report3 = new EmergencyReport(EmergencyType.Blockage, "North", 1, 3, "Tree blocking road");
             center.Dispatch(report3);
 
-            var report4 = new EmergencyReport(EmergencyType.Injury, "South", 5, 1, "Remote injury");
+            EmergencyReport report4 = new EmergencyReport(EmergencyType.Injury, "South", 5, 1, "Remote injury");
             center.Dispatch(report4);
         }
     }
+
 }
